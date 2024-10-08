@@ -1,4 +1,7 @@
 import { validationResult } from "express-validator";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default (req, res, next) => {
   const errors = validationResult(req);
